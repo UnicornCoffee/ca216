@@ -86,12 +86,12 @@ void help_command() {
 
 // Pause command
 void pause_command() {
-    printf("Press Enter to continue...\n");
+    printf("Press Enter to continue\n");
     while (getchar() != '\n');
 }
 
 // Quit command
 void quit_command() {
-    printf("Exiting shell.\n");
+    printf("Exiting shell. Goodbye! \n");
     exit(EXIT_SUCCESS);
 }
