@@ -56,18 +56,32 @@ void echo_command(char *args[]) {
     printf("\n");
 }
 
-// Help command
+
 void help_command() {
-    FILE *help_file = fopen("manual/help.txt", "r");
-    if (help_file == NULL) {
-        perror("help");
+    // Open the manual file for reading
+    FILE *manual_file = fopen("manual/readme", "r");
+    if (manual_file == NULL) {
+        perror("fopen");
         return;
     }
-    char buffer[256];
-    while (fgets(buffer, sizeof(buffer), help_file) != NULL) {
-        printf("%s", buffer);
+
+    // Execute the more command as a child process
+    FILE *more_process = popen("more", "w");
+    if (more_process == NULL) {
+        perror("popen");
+        fclose(manual_file);
+        return;
     }
-    fclose(help_file);
+
+    // Read from the manual file and write to the more process
+    char buffer[256];
+    while (fgets(buffer, sizeof(buffer), manual_file) != NULL) {
+        fputs(buffer, more_process);
+    }
+
+    // Close file pointers
+    fclose(manual_file);
+    pclose(more_process);
 }
 
 // Pause command

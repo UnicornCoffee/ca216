@@ -5,6 +5,8 @@
 #define MAX_INPUT_SIZE 1024
 
 int main() {
+	    // Display welcome message
+    printf("Welcome to MyShell! Type 'help' for the manual.\n");
     char input[MAX_INPUT_SIZE];
     char *args[MAX_INPUT_SIZE];
 
