@@ -1,7 +1,9 @@
 # MyShell User Manual
 
 ## Introduction
-Welcome to MyShell, a lightweight shell program inspired by traditional Unix shells. MyShell provides a command-line interface for executing commands and managing your system. This manual serves as a guide to help you understand MyShell's operation, commands, environment concepts, I/O redirection, process management, and more.
+Welcome to MyShell, a lightweight shell program inspired by traditional Unix shells. 
+MyShell provides a command-line interface for executing commands and managing your system. 
+This manual serves as a guide to help you understand MyShell's operation, commands, environment concepts, I/O redirection, process management, and more.
 
 ## Operation and Commands
 MyShell operates by accepting user input and executing commands. Here's an overview of the available commands:
@@ -22,7 +24,7 @@ MyShell maintains an environment similar to traditional Unix shells. Key environ
 - **Working Directory**: The working directory, displayed in the prompt, determines the location for command execution.
 
 ## I/O Redirection
-MyShell supports I/O redirection to manage command input and output effectively. Here's how it works:
+MyShell supports I/O redirection to manage command input and output effectively.
 
 - **Input Redirection (`<`)**: Redirects input from a file to a command.
 - **Output Redirection (`>` and `>>`)**: Redirects command output to a file.
