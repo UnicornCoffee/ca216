@@ -1,3 +1,6 @@
+# Set shell environment variable
+export shell = $(PWD)/bin/myshell
+
 # Compiler
 CC = gcc
 
@@ -32,3 +35,4 @@ $(BIN_DIR)/$(TARGET): $(OBJS)
 clean:
 	rm -f $(OBJS)
 	rm -f $(BIN_DIR)/$(TARGET)
+
