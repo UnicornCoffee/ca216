@@ -1,7 +1,7 @@
-# MyShell User Manual
+# MyShell User Manual-Isabelle O'Keeffe
 
 ## Introduction
-Welcome to MyShell, a lightweight shell program inspired by traditional Unix shells. 
+Welcome to MyShell, a miniature shell program inspired by traditional Unix shells. 
 MyShell provides a command-line interface for executing commands and managing your system. 
 This manual serves as a guide to help you understand MyShell's operation, commands, environment concepts, I/O redirection and process management.
 
@@ -43,6 +43,9 @@ MyShell manages processes, allowing commands to execute in either foreground or 
 5. Love, R. (2010). *Linux System Programming: Talking Directly to the Kernel and C Library*. O'Reilly Media.
 6. Rochkind, M. J. (1985). *Advanced Unix Programming*. Prentice-Hall.
 
+##NOTE:
+Run the shell by typing ./bin/myshell
+.gitkeep files are a new concept I learned from this project, they allow you to track and push empty directories such as bin!
 
 
 ## DECLARATION
