@@ -4,7 +4,7 @@
 Welcome to MyShell, a miniature shell program inspired by traditional Unix shells. 
 MyShell provides a command-line interface for executing commands and managing your system. 
 This manual serves as a guide to help you understand MyShell's operation, commands, environment concepts, I/O redirection and process management.
-
+PLEASE NOTE: Upon making and running the shell there are two error messages, the shell still works despite these! 
 ## Operation and Commands
 MyShell operates by accepting user input and executing commands. Here's an overview of the available commands:
 
