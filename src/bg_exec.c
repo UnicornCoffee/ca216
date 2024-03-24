@@ -6,6 +6,17 @@
 #include <sys/wait.h>
 #include "shell.h"
 
+/*
+    These functions are responsible for executing commands in the shell environment.
+
+    - execute_background: Executes a command in the background, forking a child process to run the command independently. It prints the PID of the background process.
+    
+    - execute_command: Executes a command in the foreground, forking a child process to run the command. 
+	It checks if the command should be executed in the background by checking for the presence of an ampersand (&) at the end of the command.
+	If the command is executed in the foreground, the parent process waits for the child process to finish before continuing.
+*/
+
+
 void execute_background(char *args[]) {
     pid_t pid = fork();
     if (pid < 0) {

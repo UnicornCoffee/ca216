@@ -5,6 +5,18 @@
 #include <unistd.h>
 #include "shell.h"
 
+/*
+    These functions handle input and output redirection for the shell environment. 
+
+    - handle_input_redirection: Opens the specified input file and redirects standard input to it.
+    
+    - handle_output_redirection: Opens or creates the specified output file, truncating it if it already exists, and redirects standard output to it.
+
+    - handle_output_redirection_append: Opens or creates the specified output file, appending to it if it already exists, and redirects standard output to it.
+*/
+
+
+
 // Function to handle input redirection
 void handle_input_redirection(char *input_file) {
     int fd = open(input_file, O_RDONLY);

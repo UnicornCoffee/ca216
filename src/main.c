@@ -5,6 +5,15 @@
 
 #define MAX_INPUT_SIZE 1024
 
+/*
+    This program implements a basic shell environment in C. It includes functions for internal commands. 
+    The main function reads input either interactively from the user or from a file specified as a command-line argument. 
+	It parses the input, checks for internal commands, handles input redirection, and executes commands accordingly. External commands are executed using a separate function.
+    The program is designed to provide a simple shell experience, supporting both interactive and batch modes, with error handling and clear prompts.
+*/
+
+
+
 int main(int argc, char *argv[]) {
     char input[MAX_INPUT_SIZE];
     char *args[MAX_INPUT_SIZE];

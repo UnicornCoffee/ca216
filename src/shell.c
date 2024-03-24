@@ -5,6 +5,20 @@
 #include <dirent.h>
 #include "shell.h"
 
+/*
+    This code implements a set of basic shell commands:
+
+    - cd_command: Changes the directory and updates the PWD environment variable if an argument is provided, otherwise prints the current directory.
+    - clr_command: Clears the screen using ANSI escape sequences.
+    - dir_command: Lists the contents of a directory. If no argument is provided, it defaults to the current directory.
+    - environ_command: Lists all environment variables.
+    - echo_command: Prints arguments to the console.
+    - help_command: Displays a manual file by piping its content through the 'more' command.
+    - pause_command: Pauses execution until the Enter key is pressed.
+    - quit_command: Exits the shell gracefully.
+*/
+
+
 // Change directory command
 void cd_command(char *args[]) {
     if (args[1] == NULL) {

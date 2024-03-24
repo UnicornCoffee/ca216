@@ -2,6 +2,19 @@
 #include <string.h>
 #include "shell.h"
 
+/*
+    This function parses user input into arguments, splitting the input string based on whitespace characters (space, tab, newline).
+
+    - parse_input: Takes a string of user input and splits it into individual arguments, storing them in the provided args array. It uses strtok function to tokenize the input string and separates tokens based on space, tab, and newline characters. The args array is terminated with a NULL pointer to mark the end of arguments.
+
+    Additionally, the code includes two utility functions:
+
+    - print_error: Prints an error message to the standard error stream.
+    
+    - file_exists: Checks whether a file exists in the file system. It attempts to open the file in read mode, closing it immediately after to determine existence. Returns 1 if the file exists, otherwise returns 0.
+*/
+
+
 // Parse user input into arguments
 void parse_input(char *input, char *args[]) {
     char *token;
