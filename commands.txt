@@ -1,0 +1,3 @@
+echo "Foreground command"
+sleep 5 &
+echo "Background command"
